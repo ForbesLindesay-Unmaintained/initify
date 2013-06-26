@@ -61,14 +61,14 @@ ready.done(function () {
   switch (options.type) {
     case '0': //library
       template('package-library.json', 'package.json')
-      write('index.js', '')
+      write('index.js', "'use strict'")
       template('README.md')
       break;
     case '1': //command line app
       template('package-cli.json', 'package.json')
       try { fs.mkdirSync('bin') } catch (ex) {}
-      write('index.js', '')
-      write('bin/cli.js', 'var ' + options.name.replace(/[^a-z0-9A-Z]+/g, '') + ' = require(\'../\')')
+      write('index.js', "'use strict'")
+      write('bin/cli.js', '#!/usr/bin/env node\n\n\'use strict\'\n\nvar ' + options.name.replace(/[^a-z0-9A-Z]+/g, '') + ' = require(\'../\')')
       template('README.md')
       break;
     case '2': //static website
