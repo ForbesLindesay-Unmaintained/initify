@@ -1,0 +1,22 @@
+{
+  "name": "<{name}>",
+  "version": "0.0.0",
+  "description": "<{description}>",
+  "bin": "./bin/cli.js",
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "linify": "*"
+  },
+  "scripts": {
+    "test": "mocha -R spec",
+    "prepublish": "linify transform ./bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<{user}>/<{name}>.git"
+  },
+  "author": "<{author}>",
+  "license": "MIT"
+}

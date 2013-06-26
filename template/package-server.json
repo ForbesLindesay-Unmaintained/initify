@@ -1,0 +1,13 @@
+{
+  "name": "<{name}>",
+  "version": "0.0.0",
+  "private": true,
+  "description": "<{description}>",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  }
+}

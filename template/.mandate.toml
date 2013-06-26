@@ -1,0 +1,6 @@
+source="./out"
+
+[aws]
+bucket="<website>"
+key="<aws-key>"
+secret="<aws-secret>"

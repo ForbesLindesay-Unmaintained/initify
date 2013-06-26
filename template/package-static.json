@@ -1,0 +1,21 @@
+{
+  "name": "<{name}>",
+  "version": "0.0.0",
+  "versionify": "0.0.0",
+  "private": true,
+  "description": "<{description}>",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "versionify": "*",
+    "stop": "*",
+    "rimraf": "*",
+    "mandate": "*"
+  },
+  "scripts": {
+    "prerelease": "versionify && rimraf out",
+    "release": "stop && mandate",
+    "postrelease": "rimraf out",
+    "test": "mocha -R spec"
+  }
+}

@@ -1,0 +1,1 @@
+var initify = require('../')
