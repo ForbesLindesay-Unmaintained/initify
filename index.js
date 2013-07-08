@@ -13,7 +13,7 @@ var github = discern.github(discern.folder.sync(dir))
 var ready = Q(null)
 
 var options = settings
-options.name = (github && github[0]) || path.basename(dir)
+options.name = (github && github[1]) || path.basename(dir)
 options.year = (new Date).getFullYear()
 
 prompt('type', '0', '(0: library, 1: command line app, 2: static website, 3: dynamic website)')
