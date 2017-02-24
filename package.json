@@ -5,8 +5,8 @@
   "bin": "./bin/cli.js",
   "keywords": [],
   "dependencies": {
-    "discern": "~1.0.0",
-    "q": "~0.9.6",
+    "discern": "~1.1.2",
+    "q": "~1.4.1",
     "read": "~1.0.4"
   },
   "devDependencies": {
